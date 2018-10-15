@@ -1,0 +1,9 @@
+# config/locales/kaminari.ja.yml
+ja:
+  views:
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "前へ"
+      next: "次へ"
+      truncate: "..."

@@ -7,6 +7,7 @@ gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'kaminari'
 
 ruby '2.3.7'
 

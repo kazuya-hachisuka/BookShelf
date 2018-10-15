@@ -20,4 +20,7 @@
     <% end %>
   </tbody>
 </table>
+<div class="float-left">
+  <%= paginate @books %>
+</div>
 <%= link_to 'New Book', new_book_path, :class => 'btn btn-primary' %>
