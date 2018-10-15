@@ -5,6 +5,8 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'jquery-rails'
+gem 'simple_form'
 
 ruby '2.3.7'
 
