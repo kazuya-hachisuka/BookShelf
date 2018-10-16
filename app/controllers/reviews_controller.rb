@@ -5,7 +5,7 @@ class ReviewsController < ApplicationController
   # GET /reviews
   # GET /reviews.json
   def index
-    @reviews = Review.page params[:page]
+    @reviews = Review.page(params[:page])
   end
 
   # GET /reviews/1
@@ -74,7 +74,7 @@ class ReviewsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
-      permitted_review_params = params.require(:review).permit(:user_id, :book_id, :description)
+      permitted_review_params = params.require(:review).permit(:description)
       permitted_review_params[:user] = current_user
       permitted_review_params[:book] = @book
       permitted_review_params
