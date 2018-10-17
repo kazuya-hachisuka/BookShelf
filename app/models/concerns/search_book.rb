@@ -1,6 +1,6 @@
 module SearchBook
 	extend ActiveSupport::Concern
-	include do
+	included do
 		scope :search_title, lambda { |keyword|
 			table = Book.arel_table
 			condition = table[:title].matches("%#{keyword}%")

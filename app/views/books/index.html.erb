@@ -1,8 +1,9 @@
 <h1>Books</h1>
 <form action="<%= books_path %>" method="get" class="form-inline" >
-  <input class="form-control" type"textname="s_title" value="<%= request[:s_title] %> ">
+  <input class="form-control" type="text" name="s_title" value="<%= request[:s_title] %> ">
   <button class="btn btn-default" type="sbmit">検索</button>
 </form>
+
 <table class="table table-striped">
   <thead>
     <tr>
